@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "SilkScreenRegular";
+  src: url("../assets/font/Silkscreen-Regular.ttf")
+}
+
+@font-face {
+  font-family: "SilkScreenBold";
+  src: url("../assets/font/Silkscreen-Bold.ttf")
+}

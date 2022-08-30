@@ -1,0 +1,6 @@
+/* Reset CSS - the base css that will be used on all elements by default */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,152 @@
+@import "./variables.css";
+@import "./reset.css";
+@import "./font.css";
+
+
+body {
+  background: linear-gradient(71deg, var(--primary-one) 0%, var(--primary-two) 50%, var(--primary-three) 100%);
+  display: grid;
+  height: 100vh;
+  font-family: 'SilkScreenRegular';
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  display: grid;
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section_fold {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.match_vs {
+  display: grid;
+  grid-template-columns: 400px 1fr 400px;
+  align-items: center;
+}
+
+.team_logo {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  opacity: 0.6;
+  filter: grayscale(0.2);
+}
+
+.teams {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.tournament_name {
+  align-self: center;
+  justify-self: center;
+  font-size: xx-large;
+}
+
+.team_names {
+  position: relative;
+  justify-self: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.team_logo--img {
+  max-height: 300px;
+  width: 100%;
+}
+
+.team_names_team_vs {
+  opacity: 0.05;
+}
+
+.team_names_team_1 {
+  text-align: left;
+  position: relative;
+  left: -50px;
+}
+
+.team_names_team_2 {
+  text-align: right;
+  position: relative;
+  left: 50px;
+  top: -20px;
+}
+
+.team_name--team_prefix {
+  font-size: x-large;
+}
+
+.match_info {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15px;
+  padding: 0 50px;
+}
+
+.match_info--team_heroes {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.match_info--stats {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background: #00000012;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.match_info--score {
+  font-size: 40px;
+}
+
+.upcoming_match_info_header {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.upcoming_match_info_vs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background: #0000000c;
+  border-radius: 5px;
+  filter: grayscale(1);
+  transition: 0.35s;
+}
+
+.upcoming_match_info_vs:hover {
+  filter: grayscale(0);
+  transition: 0.35s;
+  background: #0000002f;
+}
+
+.upcoming_match_info--team_logo_team--img {
+  border-radius: 50%;
+  width: 40px;
+  height: 100%;
+}
+
+.divider {
+  margin: 20px 0;
+  border-color: #253376;
+}
