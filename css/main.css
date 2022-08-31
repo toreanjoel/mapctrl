@@ -11,10 +11,15 @@ body {
   color: #fff;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-y: hidden;
 }
 
 .main {
   display: grid;
+  grid-template-columns: 2fr auto 1fr;
+}
+
+.current_match {
   max-width: 980px;
   margin: 0 auto;
   width: 100%;
@@ -22,7 +27,7 @@ body {
 
 .section_fold {
   display: grid;
-  grid-gap: 50px;
+  grid-template-rows: 200px 1fr 2fr;
 }
 
 .match_vs {
@@ -61,7 +66,7 @@ body {
 }
 
 .team_logo--img {
-  max-height: 300px;
+  max-height: 200px;
   width: 100%;
 }
 
@@ -149,4 +154,8 @@ body {
 .divider {
   margin: 20px 0;
   border-color: #253376;
+}
+
+.upcoming_match_info {
+  padding: 20px;
 }
