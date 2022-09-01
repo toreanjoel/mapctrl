@@ -12,121 +12,66 @@
   <div class="main">
     <div class="section_fold">
       <div class="tournament_name">
-        MapCtrl - Season 1
+        <!-- MapCtrl - Season 1 -->
+        <img src="./assets/logo/logo-transparent.png" class="tounament_logo" alt="MapCtrl-logo" />
       </div>
-      <div class="current_match">
-        <div class="match_vs">
-          <!-- column: 1fr/3fr/1fr -->
-          <div class="team_logo team_logo_1">
-            <!-- <div></div> -->
-            <img src="./assets/examples/inf.png" alt="team one logo" class="team_logo--img team_logo_team_one" />
-          </div>
-          <div class="teams">
-            <div class="team_names">
-              <div class="team_names_team_1"><span class="team_name--team_prefix">Team</span><br /><span class="team_name--team_1_pallet">Navi</span></div>
-              <div class="team_names_team_vs">vs</div>
-              <div class="team_names_team_2"><span class="team_name--team_prefix">Team</span><br /><span class="team_name--team_2_pallet">Liquid</span></div>
+      <div class="match_section">
+        <!-- PLayer / text view /w in game start -->
+        <!-- <div class="live_video">
+          <iframe
+            src="https://player.twitch.tv/?channel=gorgc&parent=127.0.0.1&parent=localhost"
+            height="100%"
+            width="100%"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+        </div> -->
+        <!-- player / text view end -->
+        <!-- The score section start -->
+        <div class="current_match">
+          <div class="match_vs">
+            <div class="team_logo team_logo_1">
+              <img src="./assets/examples/inf.png" alt="team one logo" class="team_logo--img team_logo_team_one" />
+            </div>
+            <div class="teams">
+              <div class="team_names">
+                <div class="team_names_team_1"><span class="team_name--team_prefix">Team</span><br /><span class="team_name--team_1_pallet">Navi</span></div>
+                <div class="team_names_team_vs">vs</div>
+                <div class="team_names_team_2"><span class="team_name--team_prefix">Team</span><br /><span class="team_name--team_2_pallet">Liquid</span></div>
+              </div>
+            </div>
+            <div class="team_logo team_logo_2">
+              <img src="./assets/examples/navi.png" alt="team two logo" class="team_logo--img team_logo_team_two" />
             </div>
           </div>
-          <div class="team_logo team_logo_2">
-            <!-- <div></div> -->
-            <!-- use webp where possible -->
-            <img src="./assets/examples/liquid.png" alt="team two logo" class="team_logo--img team_logo_team_two" />
-          </div>
-        </div>
-        <!-- column: 1fr/3fr/1fr -->
-        <!-- hide info if not live -->
-        <div class="match_info">
-          <div class="match_info--team_heroes">
-            <!-- Left info data -->
-          </div>
-          <div class="match_info--stats">
-            <div class="match_info--score">-</div>
-            <div class="match_info--time_divider">
-              <div>Date:</div>
-              <div>15/10/2022 19:00 SAST</div>
+          <div class="match_info">
+            <div class="match_info--stats">
+              <div class="match_info--score">-</div>
+              <div class="match_info--time_divider">
+                <div>Date:</div>
+                <div>15/10/2022 19:00 SAST</div>
+              </div>
+              <div class="match_info--score">-</div>
             </div>
-            <div class="match_info--score">-</div>
-          </div>
-          <div>
-            <!-- Right info data  -->
+  
           </div>
         </div>
-        <!-- hide info if not live -->
+        <!-- Score section end -->
       </div>
-      <div class="live_video">
-        <iframe
-          src="https://player.twitch.tv/?channel=purgegamers&parent=127.0.0.1&autoplay=false"
-          height="100%"
-          width="100%"
-          frameborder="0"
-          allowfullscreen>
-      </iframe>
-      </div>
+      <div class="match_mini_info"></div>
     </div>
     <hr class="divider" />
     <div class="upcoming_match_info">
       <!-- upcoming matches come here -->
       <div class="upcoming_match_info_header">Upcoming:</div>
       <!-- List of upcoming data -->
-      <div class="upcoming_match_info_vs">
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/OG.png" alt="upcoming team 1" class="upcoming_match_info--team_logo_team_1 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-        <div class="upcoming_match_info_date">16/10/2022 21:00 SAST</div>
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/diamond.png" alt="upcoming team 2" class="upcoming_match_info--team_logo_team_2 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-      </div>
-      <div class="upcoming_match_info_vs">
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/OG.png" alt="upcoming team 1" class="upcoming_match_info--team_logo_team_1 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-        <div class="upcoming_match_info_date">16/10/2022 21:00 SAST</div>
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/inf.png" alt="upcoming team 2" class="upcoming_match_info--team_logo_team_2 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-      </div>
-      <div class="upcoming_match_info_vs">
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/inf.png" alt="upcoming team 1" class="upcoming_match_info--team_logo_team_1 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-        <div class="upcoming_match_info_date">16/10/2022 21:00 SAST</div>
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/Team_logo_Team_Secret.webp" alt="upcoming team 2" class="upcoming_match_info--team_logo_team_2 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-      </div>
-      <div class="upcoming_match_info_vs">
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/kobi.png" alt="upcoming team 1" class="upcoming_match_info--team_logo_team_1 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-        <div class="upcoming_match_info_date">16/10/2022 21:00 SAST</div>
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/diamond.png" alt="upcoming team 2" class="upcoming_match_info--team_logo_team_2 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-      </div>
-      <div class="upcoming_match_info_vs">
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/OG.png" alt="upcoming team 1" class="upcoming_match_info--team_logo_team_1 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-        <div class="upcoming_match_info_date">16/10/2022 21:00 SAST</div>
-        <div class="upcoming_match_info_team_name">
-          <div><img src="./assets/examples/diamond.png" alt="upcoming team 2" class="upcoming_match_info--team_logo_team_2 upcoming_match_info--team_logo_team--img" /></div>
-          <div>Diamond</div>
-        </div>
-      </div>
+      <div class="upcoming_matches"></div>
     </div>
   </div>
   <!-- JS -->
+  <script src="./script/mock.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="./script/utils.js" type="text/javascript"></script>
   <script src="./script/app.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 :root {
   /* pallet */
-  --primary-one: #1A1F3B;
-  --primary-two: #18296A;
-  --primary-three: #060B29;
+  --primary-dark-blue: #182533;
+  --primary-light-grey: #DBDBDB;
+  --primary-green: #21FD25;
+  --primary-lemon: #C6FF2A;
+  --primary-red: #D03035;
 }

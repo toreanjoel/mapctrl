@@ -4,11 +4,12 @@
 
 
 body {
-  background: linear-gradient(71deg, var(--primary-one) 0%, var(--primary-two) 50%, var(--primary-three) 100%);
+  background: linear-gradient(135deg, var(--primary-dark-blue) 65%, var(--primary-green) 65.1%, var(--primary-lemon) 100%);
   display: grid;
   height: 100vh;
-  font-family: 'SilkScreenRegular';
-  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: var(--primary-light-grey);
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-y: hidden;
@@ -23,11 +24,14 @@ body {
   max-width: 980px;
   margin: 0 auto;
   width: 100%;
+  align-self: center;
+  display: grid;
+  grid-gap: 50px;
 }
 
 .section_fold {
   display: grid;
-  grid-template-rows: 200px 1fr 2fr;
+  grid-template-rows: auto 3fr 100px;
 }
 
 .match_vs {
@@ -52,8 +56,17 @@ body {
 
 .tournament_name {
   align-self: center;
-  justify-self: center;
-  font-size: xx-large;
+  /* justify-self: center; */
+  /* font-size: xx-large; */
+  display: grid;
+  /* width: 50px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.tounament_logo {
+  width: 100%;
+  max-width: 500px;
 }
 
 .team_names {
@@ -71,7 +84,8 @@ body {
 }
 
 .team_names_team_vs {
-  opacity: 0.05;
+  font-size: 21px;
+  color: var(--primary-red);
 }
 
 .team_names_team_1 {
@@ -125,6 +139,11 @@ body {
   margin-bottom: 20px;
 }
 
+.match_mini_info {
+  /* background: #182533; */
+  border-top: 1px solid var(--primary-green);
+}
+
 .upcoming_match_info_vs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -133,16 +152,26 @@ body {
   text-align: center;
   margin: 10px;
   padding: 10px;
-  background: #0000000c;
+  background: #dbdbdb3b;
   border-radius: 5px;
-  filter: grayscale(1);
+  filter: grayscale(0.7);
   transition: 0.35s;
+  text-shadow: 2px 2px 2px var(--primary-dark-blue);
+  border-bottom: 5px solid transparent;
 }
 
 .upcoming_match_info_vs:hover {
-  filter: grayscale(0);
+  cursor: pointer;
+}
+
+.upcoming_match_info_vs--selected {
+  border-bottom: 5px solid var(--primary-lemon);
+}
+
+.upcoming_match_info_vs:hover {
+  filter: grayscale(0.2);
   transition: 0.35s;
-  background: #0000002f;
+  background: var(--primary-red);
 }
 
 .upcoming_match_info--team_logo_team--img {
@@ -152,10 +181,13 @@ body {
 }
 
 .divider {
-  margin: 20px 0;
-  border-color: #253376;
+  border: 1px solid var(--primary-green);
 }
 
 .upcoming_match_info {
   padding: 20px;
+}
+
+.live_video {
+  height: 100%;
 }
