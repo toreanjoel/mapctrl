@@ -8,54 +8,34 @@
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
+  <!-- loader -->
+  <!--  NO BORDER SPINNER  -->
+  <div class="loader-wrapper">
+    <img src="./assets/logo/logo-transparent.png" class="tournament_logo_loader" alt="MapCtrl-logo" />
+    <div class="loader"></div>
+  </div>
   <!-- warapper -->
   <div class="main">
     <div class="section_fold">
       <div class="tournament_name">
         <!-- MapCtrl - Season 1 -->
-        <img src="./assets/logo/logo-transparent.png" class="tounament_logo" alt="MapCtrl-logo" />
+        <img src="./assets/logo/logo-transparent.png" class="tournament_logo" alt="MapCtrl-logo" />
       </div>
       <div class="match_section">
         <!-- PLayer / text view /w in game start -->
-        <!-- <div class="live_video">
+        <div class="live_video">
           <iframe
-            src="https://player.twitch.tv/?channel=gorgc&parent=127.0.0.1&parent=localhost"
+            class="live_video--player"
             height="100%"
             width="100%"
             frameborder="0"
             allowfullscreen>
-        </iframe>
-        </div> -->
+          </iframe>
+          <div class="match_info--toggle_info match_info_toggle_state" onclick="toggleLiveAndInfo({ showInfo: true })">Show Info</div>
+        </div>
         <!-- player / text view end -->
         <!-- The score section start -->
-        <div class="current_match">
-          <div class="match_vs">
-            <div class="team_logo team_logo_1">
-              <img src="./assets/examples/inf.png" alt="team one logo" class="team_logo--img team_logo_team_one" />
-            </div>
-            <div class="teams">
-              <div class="team_names">
-                <div class="team_names_team_1"><span class="team_name--team_prefix">Team</span><br /><span class="team_name--team_1_pallet">Navi</span></div>
-                <div class="team_names_team_vs">vs</div>
-                <div class="team_names_team_2"><span class="team_name--team_prefix">Team</span><br /><span class="team_name--team_2_pallet">Liquid</span></div>
-              </div>
-            </div>
-            <div class="team_logo team_logo_2">
-              <img src="./assets/examples/navi.png" alt="team two logo" class="team_logo--img team_logo_team_two" />
-            </div>
-          </div>
-          <div class="match_info">
-            <div class="match_info--stats">
-              <div class="match_info--score">-</div>
-              <div class="match_info--time_divider">
-                <div>Date:</div>
-                <div>15/10/2022 19:00 SAST</div>
-              </div>
-              <div class="match_info--score">-</div>
-            </div>
-  
-          </div>
-        </div>
+        <div class="current_match"></div>
         <!-- Score section end -->
       </div>
       <div class="match_mini_info"></div>
@@ -71,6 +51,7 @@
   <!-- JS -->
   <script src="./script/mock.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="./script/constants.js" type="text/javascript"></script>
   <script src="./script/utils.js" type="text/javascript"></script>
   <script src="./script/app.js" type="text/javascript"></script>
 </body>

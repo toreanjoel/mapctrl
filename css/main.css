@@ -1,7 +1,13 @@
 @import "./variables.css";
 @import "./reset.css";
 @import "./font.css";
+@import "./animation.css";
 
+/* Divider / wrappers / layout */
+
+.divider {
+  border: 1px solid var(--primary-green);
+}
 
 body {
   background: linear-gradient(135deg, var(--primary-dark-blue) 65%, var(--primary-green) 65.1%, var(--primary-lemon) 100%);
@@ -20,8 +26,24 @@ body {
   grid-template-columns: 2fr auto 1fr;
 }
 
+/* other */
+
+.section_fold {
+  display: grid;
+  grid-template-rows: auto 3fr auto 100px;
+}
+
+/* match details general */
+
+.match_vs {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  align-items: center;
+  grid-gap: 50px;
+}
+
 .current_match {
-  max-width: 980px;
+  max-width: 800px;
   margin: 0 auto;
   width: 100%;
   align-self: center;
@@ -29,44 +51,24 @@ body {
   grid-gap: 50px;
 }
 
-.section_fold {
-  display: grid;
-  grid-template-rows: auto 3fr 100px;
-}
-
-.match_vs {
-  display: grid;
-  grid-template-columns: 400px 1fr 400px;
-  align-items: center;
-}
-
-.team_logo {
-  align-items: center;
-  display: grid;
-  justify-content: center;
-  opacity: 0.6;
-  filter: grayscale(0.2);
-}
-
-.teams {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
+/* Tournament */
 
 .tournament_name {
   align-self: center;
-  /* justify-self: center; */
-  /* font-size: xx-large; */
   display: grid;
-  /* width: 50px; */
   align-items: center;
   justify-content: center;
 }
 
-.tounament_logo {
-  width: 100%;
+.tournament_logo {
   max-width: 500px;
+}
+
+
+/* teams names / logo */
+
+.team_logo {
+  margin: 0 auto;
 }
 
 .team_names {
@@ -78,32 +80,30 @@ body {
   width: 100%;
 }
 
-.team_logo--img {
-  max-height: 200px;
-  width: 100%;
-}
-
 .team_names_team_vs {
   font-size: 21px;
   color: var(--primary-red);
 }
 
+.team_name--team_prefix {
+  font-size: x-large;
+}
+
+.team_logo--img {
+  max-height: 200px;
+  max-width: 200px;
+  width: 100%;
+}
+
 .team_names_team_1 {
   text-align: left;
-  position: relative;
-  left: -50px;
 }
 
 .team_names_team_2 {
   text-align: right;
-  position: relative;
-  left: 50px;
-  top: -20px;
 }
 
-.team_name--team_prefix {
-  font-size: x-large;
-}
+/* match info */
 
 .match_info {
   display: grid;
@@ -180,14 +180,64 @@ body {
   height: 100%;
 }
 
-.divider {
-  border: 1px solid var(--primary-green);
-}
-
 .upcoming_match_info {
   padding: 20px;
 }
 
+
+.match_info_toggle_state {
+  justify-self: center;
+  padding: 10px;
+  margin: 10px 0;
+  background: var(--primary-lemon);
+  color: var(--primary-dark-blue);
+  border-radius: 5px;
+}
+
+.match_info_toggle_state:hover {
+  cursor: pointer;
+}
+
+/* video player */
 .live_video {
+  display: none;
+  align-items: center;
+  grid-auto-rows: 1fr auto;
   height: 100%;
 }
+
+/* loader */
+
+.loader-wrapper {
+  visibility: hidden;
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-dark-blue);
+  z-index: 99999;
+  transition: ease-in-out 0.2s;
+}
+
+.loader {
+  width: 75px;
+  height: 75px;
+  margin: 0;
+  background: transparent;
+  border-top: 4px solid var(--primary-green);
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s spin linear infinite;
+  align-self: start;
+  animation: 1s spin linear infinite;
+  justify-self: center;
+}
+
+.tournament_logo_loader {
+  width: 200px;
+  align-self: end;
+}
+
+

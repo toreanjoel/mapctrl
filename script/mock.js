@@ -3,46 +3,62 @@
 const UPCOMING = {
   1662072244: {
     "team1": {
-      "name": "Diamond",
+      "name": "Navi",
       "logo": "../assets/examples/navi.png"
     },
     "team2": {
-      "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "name": "INF",
+      "logo": "../assets/examples/inf.png"
     },
-    "id": 1662072244
+    "id": 1662072244,
+    "stream": {
+      "type": "twitch",
+      "src": "https://player.twitch.tv/?channel=gorgc&parent=127.0.0.1&parent=localhost"
+    }
   },
   1662122243: {
     "team1": {
-      "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "name": "Kobi",
+      "logo": "../assets/examples/kobi.png"
     },
     "team2": {
       "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "logo": "../assets/examples/diamond.png"
     },
-    "id": 1662122243
+    "id": 1662122243,
+    "stream": {
+      "type": "twitch",
+      "src": "https://player.twitch.tv/?channel=valorant&parent=127.0.0.1&parent=localhost"
+    }
   },
   1662472244: {
     "team1": {
-      "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "name": "Liquid",
+      "logo": "../assets/examples/liquid.png"
     },
     "team2": {
-      "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "name": "OG",
+      "logo": "../assets/examples/OG.png"
     },
-    "id": 1662472244
+    "id": 1662472244,
+    "stream": {
+      "type": "twitch",
+      "src": "https://player.twitch.tv/?channel=420jenkins&parent=127.0.0.1&parent=localhost"
+    }
   },
   1662072234: {
     "team1": {
-      "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "name": "Secret",
+      "logo": "../assets/examples/Team_logo_Team_Secret.webp"
     },
     "team2": {
-      "name": "Diamond",
-      "logo": "../assets/examples/navi.png"
+      "name": "Wing",
+      "logo": "../assets/examples/wing.png"
     },
-    "id": 1662072234
+    "id": 1662072234,
+    "stream": {
+      "type": "twitch",
+      "src": "https://player.twitch.tv/?channel=admiralbulldog&parent=127.0.0.1&parent=localhost"
+    }
   }
 }
